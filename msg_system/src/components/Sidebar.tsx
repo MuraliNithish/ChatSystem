@@ -21,7 +21,7 @@ const items: Item[] = [
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="fixed top-28 left-0 bg-[#f6f6f8]  space-y-3 mt-5 z-40">
+    <div className="fixed top-28 left-0 bg-[#f6f6f8]  space-y-2 mt-5 z-40">
       {items.map(item => (
         <div key={item.name} className={`flex items-center text-gray-500 py-2 px-4 font-sans ${item.name === 'Message System' ? 'bg-green-600 text-white w-60 h-10' : ''}`}>
           <img

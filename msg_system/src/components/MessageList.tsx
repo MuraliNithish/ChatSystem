@@ -43,7 +43,7 @@ const MessageList: React.FC<MessageListProps> = ({ activeTab, searchQuery }) => 
     <div className="py-4 font-normal">
       {filteredMessages.length > 0 ? (
         filteredMessages.map(message => (
-          <MessageItem key={message.id} message={message} />
+          <MessageItem key={message.id} message={message} activeTab={activeTab}/>
         ))
       ) : (
         <div className="text-center text-gray-500">No results found</div>
